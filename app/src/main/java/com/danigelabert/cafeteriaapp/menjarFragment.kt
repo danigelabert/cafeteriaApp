@@ -30,6 +30,8 @@ class menjarFragment : Fragment() {
         recyclerView.adapter = FoodAdapter(FoodProvider.foodList)
         binding.recyclerMenjar.addItemDecoration(decoration)
 
+
+
     }
 
 }

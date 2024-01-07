@@ -17,17 +17,11 @@ class FoodHolder(view: View):RecyclerView.ViewHolder(view) {
         binding.tvPrice.text = foodModel.preu
         Glide.with(binding.ivFood.context).load(foodModel.imatge).into(binding.ivFood)
 
-        binding.ivFood.setOnClickListener{Toast.makeText(
-            binding.ivFood.context,
-            "Click",
-            Toast.LENGTH_SHORT
-        ).show()}
+        itemView.setOnClickListener{
 
-        itemView.setOnClickListener{Toast.makeText(
-            binding.ivFood.context,
-            "Click",
-            Toast.LENGTH_SHORT
-        ).show()}
+                var pay =  Pay(foodModel.mejar, foodModel.preu, foodModel.imatge)
+                PayProvider.payList.add(PayProvider.payList.size, pay)
+        }
     }
 
 }
