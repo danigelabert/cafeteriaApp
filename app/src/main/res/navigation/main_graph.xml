@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_graph"
-    app:startDestination="@id/menjarFragment">
-
+    app:startDestination="@id/begudaFragment2">
     <fragment
-        android:id="@+id/begudaFragment"
+        android:id="@+id/begudaFragment2"
         android:name="com.danigelabert.cafeteriaapp.begudaFragment"
-        android:label="begudaFragment" />
+        android:label="begudaFragment"
+        tools:layout="@layout/fragment_beguda"/>
     <fragment
-        android:id="@+id/menjarFragment"
+        android:id="@+id/menjarFragment2"
         android:name="com.danigelabert.cafeteriaapp.menjarFragment"
-        android:label="menjarFragment" />
+        android:label="menjarFragment"
+        tools:layout="@layout/fragment_menjar"/>
     <fragment
-        android:id="@+id/pagarFragment"
+        android:id="@+id/pagarFragment2"
         android:name="com.danigelabert.cafeteriaapp.pagarFragment"
-        android:label="pagarFragment" />
+        android:label="pagarFragment"
+        tools:layout="@layout/fragment_pagar"/>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.danigelabert.cafeteriaapp.MainActivity"
+        android:label="MainActivity" />
 </navigation>

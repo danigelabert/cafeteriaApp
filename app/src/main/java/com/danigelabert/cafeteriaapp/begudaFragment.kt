@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.danigelabert.cafeteriaapp.databinding.FragmentBegudaBinding
 
 class begudaFragment : Fragment() {
@@ -16,7 +18,18 @@ class begudaFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentBegudaBinding.inflate(inflater)
+        initRecyclerView()
         return binding.root
+    }
+
+    fun initRecyclerView(){
+        val manager = LinearLayoutManager(activity)
+        val decoration = DividerItemDecoration(activity, manager.orientation)
+        val recyclerView = binding.recyclerDrink
+        recyclerView.layoutManager = manager
+        recyclerView.adapter = DrinkAdapter(DrinkProvider.drinkList)
+        binding.recyclerDrink.addItemDecoration(decoration)
+
     }
 
 }

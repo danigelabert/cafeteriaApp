@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/begudaFragment2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/baseline_local_drink_24"
+        android:title="@string/drinks" />
+    <item
+        android:id="@+id/menjarFragment2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/baseline_set_meal_24"
+        android:title="@string/food" />
+    <item
+        android:id="@+id/pagarFragment2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/baseline_payment_24"
+        android:title="@string/pay" />
+</menu>

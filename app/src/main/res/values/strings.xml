@@ -9,4 +9,7 @@
     <string name="contrasenya">Contrasenya</string>
     <string name="registrarse">Registrarse</string>
     <string name="usuari">usuari</string>
+    <string name="pay">Pay</string>
+    <string name="food">Food</string>
+    <string name="drinks">Drinks</string>
 </resources>

@@ -1,4 +1,5 @@
 package com.danigelabert.cafeteriaapp
 
-class Drink {
-}
+data class Drink (val mejar: String,
+             val preu: String,
+             val imatge: String) {}

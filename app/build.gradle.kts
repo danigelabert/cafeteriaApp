@@ -45,7 +45,7 @@ android {
 
 dependencies {
 
-    val nav_version = "2.7.5"
+    var nav_version = "2.7.5"
     val lifecycle_version = "2.6.2"
 
     implementation("androidx.core:core-ktx:1.9.0")
@@ -63,5 +63,11 @@ dependencies {
     // ViewModel
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
     implementation("com.github.bumptech.glide:glide:4.12.0")
-    annotationProcessor("com.github.bumptech.glide:compiler:4.12.0")
+
+    nav_version = "2.5.3"
+
+
+    // Kotlin
+    implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
+    implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
 }
