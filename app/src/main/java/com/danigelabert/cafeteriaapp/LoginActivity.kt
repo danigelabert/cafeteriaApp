@@ -33,10 +33,10 @@ class LoginActivity : AppCompatActivity() {
             val password = passwordEditText.text.toString()
 
             if (viewModel.login(username, password)) {
-                Toast.makeText(this, "correcte", Toast.LENGTH_SHORT).show()
+                startActivity(Intent(this, MainActivity::class.java))
 
             }else {
-                Toast.makeText(this, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Incorrecte", Toast.LENGTH_SHORT).show()
             }
         }
 

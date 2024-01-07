@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/menjarFragment">
+
+    <fragment
+        android:id="@+id/begudaFragment"
+        android:name="com.danigelabert.cafeteriaapp.begudaFragment"
+        android:label="begudaFragment" />
+    <fragment
+        android:id="@+id/menjarFragment"
+        android:name="com.danigelabert.cafeteriaapp.menjarFragment"
+        android:label="menjarFragment" />
+    <fragment
+        android:id="@+id/pagarFragment"
+        android:name="com.danigelabert.cafeteriaapp.pagarFragment"
+        android:label="pagarFragment" />
+</navigation>

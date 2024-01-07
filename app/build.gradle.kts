@@ -37,6 +37,10 @@ android {
     buildFeatures {
         dataBinding = true
     }
+
+    viewBinding{
+        enable = true
+    }
 }
 
 dependencies {
@@ -58,4 +62,6 @@ dependencies {
 
     // ViewModel
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
+    implementation("com.github.bumptech.glide:glide:4.12.0")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.12.0")
 }
